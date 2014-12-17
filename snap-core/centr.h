@@ -6,6 +6,8 @@ namespace TSnap {
 /// Returns Degree centrality of a given node NId.
 /// Degree centrality if a node is defined as its degree/(N-1), where N is the number of nodes in the network.
 double GetDegreeCentr(const PUNGraph& Graph, const int& NId);
+// Returns degree centarlizqation for a graph
+double GetDegreeCentralization(const PUNGraph& Graph);
 /// Returns Group Degree centrality of a given group NId.
 /// Degree centrality if a node is defined as its degree/(N-1), where N is the number of nodes in the network.
 //double GetGroupDegreeCentr(const PUNGraph& Graph, const PUNGraph& Group);
@@ -15,23 +17,8 @@ double GetGroupDegreeCentr(const PUNGraph& Graph, const TIntH& GroupNodes);
 //double GetGroupDegreeCentr(const PUNGraph& Graph, const PUNGraph& Group);
 double GetGroupClosenessCentr(const PUNGraph& Graph, const TIntH& GroupNodes);
 /// Returns centrality Maximum k group.
-TIntH MaxCPGreedyBetter(const PUNGraph& Graph, const int k);
 /// Returns centrality Maximum k group.
-TIntH MaxCPGreedyBetter1(const PUNGraph& Graph, const int k);
-/// Returns centrality Maximum k group.
-TIntH MaxCPGreedyBetter2(const PUNGraph& Graph, const int k);
-/// Returns centrality Maximum k group.
-TIntH MaxCPGreedyBetter3(const PUNGraph& Graph, const int k);
-/// Event importance
-TIntFltH EventImportance(const PNGraph& Graph, const int k);
-/// Intersect
-int Intersect(TUNGraph::TNodeI Node, TIntH NNodes);
-/// Intersect
-int Intersect(TUNGraph::TNodeI Node, TStr NNodes);
-/// Intersect
-int Intersect(TUNGraph::TNodeI Node, int *NNodes, int NNodes_br);
-//Load nodes list
-int Intersect1(TUNGraph::TNodeI Node, TStr NNodes);
+void MaxCPGreedyBetter(const PUNGraph& Graph, const int k, TIntH& GroupNodes);
 //Load nodes list
 TIntH LoadNodeList(TStr InFNmNodes);
 /// Returns Farness centrality of a given node NId. 

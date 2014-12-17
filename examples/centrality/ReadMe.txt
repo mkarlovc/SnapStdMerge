@@ -9,6 +9,8 @@ Measures defined on a undirected graph (we drop edge directions):
   -- closeness centrality
   -- betweenness centrality
   -- eigenvector centrality
+  -- approx. greedy aproach for finding group with max degree centrality of size k (Eiji Miyano, Hirotaka Ono, Maximum Domination Problem, CATS 2011: 55-62)
+  -- degree group centrality
 Measures defined on (the original) directed graph
   -- page rank
   -- hubs and authorities

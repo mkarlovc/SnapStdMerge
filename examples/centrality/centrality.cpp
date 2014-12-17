@@ -28,6 +28,10 @@ int main(int argc, char* argv[]) {
     const int NId = NI.GetId();
     CloseH.AddDat(NId, TSnap::GetClosenessCentr(UGraph, NId));
   }
+  printf("Group size 10 degree centrality. Group determined using max domination app greedy approach......\n");
+  TIntH gk;
+  TSnap::MaxCPGreedyBetter(UGraph, 10, gk);
+  double gdc = TSnap::GetGroupDegreeCentr(UGraph, gk);
   printf("\nDONE! saving...");
   FILE *F = fopen(OutFNm.CStr(), "wt");
   fprintf(F,"#Network: %s\n", InFNm.CStr());
@@ -48,6 +52,7 @@ int main(int argc, char* argv[]) {
       DegCentr, CloCentr, BtwCentr, EigCentr, Constraint, ClustCf, PgrCentr, HubCentr, AuthCentr);
   }
   fclose(F);
+  printf("App. max group 10 centrality:%f\n", gdc);
   Catch
   printf("\nrun time: %s (%s)\n", ExeTm.GetTmStr(), TSecTm::GetCurTm().GetTmStr().CStr());
   return 0;

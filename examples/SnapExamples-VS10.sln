@@ -49,6 +49,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bigclam", "bigclam\bigclam.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cesna", "cesna\cesna.vcxproj", "{67C001C3-4BF0-4148-AD17-5D342442232B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coreperiphery", "coreperiphery\coreperiphery.vcxproj", "{E568091E-3D74-4681-A60F-DC59A0FE7557}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "communityevo", "communityevo\communityevo.vcxproj", "{08B5F360-E692-4CBB-BD0B-B78D36DE9040}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -180,6 +184,18 @@ Global
 		{67C001C3-4BF0-4148-AD17-5D342442232B}.Release|Win32.Build.0 = Release|Win32
 		{67C001C3-4BF0-4148-AD17-5D342442232B}.Release|x64.ActiveCfg = Release|Win32
 		{67C001C3-4BF0-4148-AD17-5D342442232B}.Release|x64.Build.0 = Release|Win32
+		{E568091E-3D74-4681-A60F-DC59A0FE7557}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E568091E-3D74-4681-A60F-DC59A0FE7557}.Debug|Win32.Build.0 = Debug|Win32
+		{E568091E-3D74-4681-A60F-DC59A0FE7557}.Debug|x64.ActiveCfg = Debug|Win32
+		{E568091E-3D74-4681-A60F-DC59A0FE7557}.Release|Win32.ActiveCfg = Release|Win32
+		{E568091E-3D74-4681-A60F-DC59A0FE7557}.Release|Win32.Build.0 = Release|Win32
+		{E568091E-3D74-4681-A60F-DC59A0FE7557}.Release|x64.ActiveCfg = Release|Win32
+		{08B5F360-E692-4CBB-BD0B-B78D36DE9040}.Debug|Win32.ActiveCfg = Debug|Win32
+		{08B5F360-E692-4CBB-BD0B-B78D36DE9040}.Debug|Win32.Build.0 = Debug|Win32
+		{08B5F360-E692-4CBB-BD0B-B78D36DE9040}.Debug|x64.ActiveCfg = Debug|Win32
+		{08B5F360-E692-4CBB-BD0B-B78D36DE9040}.Release|Win32.ActiveCfg = Release|Win32
+		{08B5F360-E692-4CBB-BD0B-B78D36DE9040}.Release|Win32.Build.0 = Release|Win32
+		{08B5F360-E692-4CBB-BD0B-B78D36DE9040}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
